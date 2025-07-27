@@ -20,11 +20,11 @@ const Hero: React.FC = () => {
             </h1>
             
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 mb-6">
-              Computer Science Engineer
+              Computer Science Engineer & Full-Stack Developer
             </h2>
             
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-              Results-oriented Computer Science Engineer with a strong background in Python, Java, and MySQL. 
+              Results-oriented Computer Science Engineer with expertise in Python, Java, and MySQL. 
               Skilled in designing responsive web interfaces and building machine learning models. 
               Looking to join innovative teams and drive technical excellence in real-world applications.
             </p>
@@ -91,13 +91,9 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 p-1">
                 <img
-                  src="/lovable-uploads/f7c8f0df-b210-450d-a237-cbd35a6981ff.png"
+                  src="/profile-placeholder.svg"
                   alt="Sheema Kaunain"
                   className="w-full h-full rounded-full object-cover bg-white"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iMzIwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNjAgMTAwQzE4MS4wNDYgMTAwIDIwMCAxMTguOTU0IDIwMCAxNDBDMjAwIDE2MS4wNDYgMTgxLjA0NiAxODAgMTYwIDE4MEM4OC45NTQgMTgwIDEyMCAxNjEuMDQ2IDEyMCAxNDBDMTIwIDExOC45NTQgMTM4Ljk1NCAxMDAgMTYwIDEwMFoiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTE2MCAyMDBDMTk2LjQ0IDIwMCAyMjYuNjY3IDIyMC44OTYgMjQwIDI1MEg4MEM5My4zMzMzIDIyMC44OTYgMTIzLjU2IDIwMCAxNjAgMjAwWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K';
-                  }}
                 />
               </div>
               {/* Decorative elements */}

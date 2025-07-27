@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
       title: 'Movie Recommendation System',
       date: 'Feb 25 - Mar 25',
       description: 'Created a Python-based app using cosine similarity to recommend movies. Built with Pandas, Scikit-learn, and deployed using Streamlit. Enabled interactive UI and filtering by user preferences.',
-      image: '/lovable-uploads/1c24fa36-c1c3-45ab-8fe5-603f776bf2c9.png',
+      image: null,
       technologies: ['Python', 'Pandas', 'Scikit-learn', 'Streamlit', 'Machine Learning'],
       codeLink: 'https://github.com/amal-iyka/movie-recommendation-system',
       liveLink: 'https://movie-recommendation-app-4jyaqy8am6tufoea2i5wld.streamlit.app/'
@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
       title: 'Customer Churn Prediction',
       date: 'Jan 25 - Feb 25',
       description: 'Developed a pipeline to predict customer churn using Logistic Regression and Decision Trees. Visualized trends with Matplotlib and Seaborn for comprehensive data analysis.',
-      image: '/lovable-uploads/992fc3ab-c5c0-4329-8307-70e68239c47d.png',
+      image: null,
       technologies: ['Python', 'Scikit-learn', 'Pandas', 'Seaborn', 'Jupyter Notebook'],
       codeLink: 'https://github.com/amal-iyka/customer-churn-prediction',
       liveLink: null
@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
       title: 'Airline Management System',
       date: 'December 25',
       description: 'Java-based console application to manage flights, bookings, and passengers. Implemented file handling for data persistence and utilized object-oriented programming principles.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=500',
+      image: null,
       technologies: ['Java', 'OOP', 'File Handling', 'Console Application'],
       codeLink: 'https://github.com/amal-iyka/airline-management-system',
       liveLink: null
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Featured Projects
+            My Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A showcase of my technical projects demonstrating skills in machine learning, web development, and software engineering.
@@ -52,16 +52,10 @@ const Projects: React.FC = () => {
               className="bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100"
             >
               {/* Project Image */}
-              <div className="relative h-48 bg-gray-100">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNzUgNzVIMjI1VjEyNUgxNzVWNzVaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0xNTAgMTAwSDE3NVY3NUgxNTBWMTAwWk0yMjUgMTAwSDI1MFY3NUgyMjVWMTAwWk0xNTAgMTI1SDE3NVYxMDBIMTUwVjEyNVpNMjI1IDEyNUgyNTBWMTAwSDIyNVYxMjVaIiBmaWxsPSIjOUNBM0FGIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNkI3MjgwIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE0Ij5Qcm9qZWN0IEltYWdlPC90ZXh0Pgo8L3N2Zz4K';
-                  }}
-                />
+              <div className="relative h-48 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+                <div className="text-4xl font-bold text-blue-600">
+                  {project.title.charAt(0)}
+                </div>
                 <div className="absolute top-4 right-4">
                   <span className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium text-gray-600">
                     {project.date}
